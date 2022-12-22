@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
 Fabric script to deploy tgz archive
@@ -9,7 +8,7 @@ fab -f 2-do_deploy_web_static.py do_deploy:archive_path=filepath
 from os.path import exists
 from fabric.api import put, run, env
 
-env.hosts = ['34.224.83.234', '	54.175.113.237']
+env.hosts = ['34.224.83.234', '54.175.113.237']
 
 
 def do_deploy(archive_path):
